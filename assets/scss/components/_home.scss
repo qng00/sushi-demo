@@ -1,0 +1,60 @@
+.home {
+    position: relative;
+
+    &__container {
+        row-gap: 48px;
+        padding-top: 32px;
+    }
+
+    &__img {
+        width: 300px;
+        justify-self: center;
+    }
+
+    &__data {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: var(--biggest-font-size);
+        font-family: var(--title-font);
+        margin-bottom: 16px;
+    
+        & img {
+            width: 40px;
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 8px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__description {
+        padding: 0 16px;
+        margin-bottom: 40px;
+    }
+
+    &__leaf-1,
+    &__leaf-2 {
+        position: absolute;
+        opacity: .2;
+    }
+
+    &__leaf-1 {
+        width: 80px;
+        top: 128px;
+        left: -16px;
+        transform: rotate(90deg);
+    }
+
+    &__leaf-2 {
+        width: 100px;
+        right: -32px;
+        bottom: 16px;
+        transform: rotate(-15deg);
+    }
+}

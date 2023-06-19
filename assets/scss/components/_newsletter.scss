@@ -1,0 +1,61 @@
+.newsletter {
+    &__container {
+        position: relative;
+    }
+
+    &__content {
+        position: relative;
+        background-color: hsl(19, 24%, 15%);
+        border-radius: 40px;
+        padding: 80px 16px 48px;
+        text-align: center;
+        overflow: hidden;
+        margin-bottom: 32px;
+    }
+
+    &__img {
+        width: 250px;
+        position: absolute;
+        top: -72px;
+        left: -128px;
+    }
+
+    &__data {
+        & .section__title {
+            color: #fff;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__form {
+        background-color: #fff;
+        padding: 5px 5px 5px 16px;
+        border-radius: 64px;
+        display: flex;
+        column-gap: 4px;
+    }
+
+    &__input,
+    &__button {
+        font-family: var(--body-font);
+        border: none;
+        outline: none;
+    }
+
+    &__input {
+        width: 90%;
+        color: var(--text-color);
+    }
+
+    &__button {
+        cursor: pointer;
+    }
+
+    &__spinach {
+        width: 30px;
+        position: absolute;
+        right: 32px;
+        bottom: -32px;
+        transform: rotate(45deg);
+    }
+}

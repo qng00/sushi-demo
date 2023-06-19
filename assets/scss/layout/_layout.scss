@@ -1,0 +1,36 @@
+.container {
+    max-width: 1024px;
+    margin-inline: 24px;
+}
+  
+.grid {
+    display: grid;
+    gap: 24px;
+}
+
+.section {
+    padding-block: 80px 16px;
+
+    &__title {
+        font-size: var(--h1-font-size);
+        font-family: var(--title-font);
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: var(--h2-font-size);
+        font-family: var(--subtitle-font);
+        color: var(--first-color);
+        margin-bottom: 8px;
+    }
+
+    &__title, 
+    &__subtitle {
+        text-align: center;
+    }
+}
+  
+.main {
+    overflow: hidden; /* For animation ScrollReveal */
+}
